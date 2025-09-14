@@ -3,68 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vijay Singh Deval - Grey Fox Holdings</title>
+  <title>Vijay Singh Deval | Grey Fox Holdings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-      color: #00ffcc;
-    }
-    h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #ffcc00;
-    }
-    p {
-      font-size: 1.2em;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
       line-height: 1.6;
-      max-width: 700px;
-      margin: 0 auto 20px;
     }
-    a {
-      color: #00ffcc;
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                  url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #f5d26a;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p { font-size: 1.2rem; margin-bottom: 20px; }
+    .btn {
+      padding: 12px 25px;
+      background: #f5d26a;
+      color: #000;
       text-decoration: none;
       font-weight: bold;
+      border-radius: 30px;
+      transition: 0.3s;
     }
-    a:hover {
-      text-decoration: underline;
+    .btn:hover { background: #fff; color: #000; }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #cccccc;
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #f5d26a;
+      text-align: center;
+    }
+    section p {
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      border: 1px solid #f5d26a;
+      color: #f5d26a;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+    .contact a:hover {
+      background: #f5d26a;
+      color: #000;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <h1>Vijay Singh Deval</h1>
-  <h2>Founder & CEO - Grey Fox Holdings</h2>
-  
-  <p>
-    Hi, I am <strong>Vijay Singh Deval</strong>, a trader, investor, and entrepreneur from Rajasthan.  
-    At just 21, I have built expertise in <b>swing trading, intraday strategies, forex & stock markets</b>.
-  </p>
-  
-  <p>
-    I am also the founder of <b>Grey Fox Holdings</b> — a hedge fund-style investment company inspired by giants like BlackRock & J.P. Morgan.
-  </p>
-  
-  <p>
-    📩 Contact me: <a href="mailto:vijayrajputbusiness@gmail.com">vijayrajputbusiness@gmail.com</a><br>
-    📷 Instagram: <a href="https://instagram.com/the_vijaysingh_deval" target="_blank">@the_vijaysingh_deval</a>
-  </p>
-  
-  <div class="footer">
-    &copy; 2025 Vijay Singh Deval | Grey Fox Holdings. All Rights Reserved.
-  </div>
+  <!-- Hero Section -->
+  <header>
+    <div>
+      <h1>Vijay Singh Deval</h1>
+      <p>Trader | Entrepreneur | Founder of Grey Fox Holdings</p>
+      <a href="#about" class="btn">Explore More</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Vijay Singh Deval from Raniwara, Rajasthan. At just 21, I have built a portfolio worth ₹30 crore+ through swing, intraday, stock, and forex trading. I believe in smart risk management and financial growth.</p>
+  </section>
+
+  <!-- Company Section -->
+  <section id="company">
+    <h2>Grey Fox Holdings</h2>
+    <p>Grey Fox Holdings is my investment firm built on trust, strategy, and performance — inspired by global leaders like BlackRock and J.P. Morgan. We provide hedge fund-style investment opportunities and wealth management solutions for HNIs and investors.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:vijayrajputbusiness@gmail.com">vijayrajputbusiness@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/the_vijaysingh_deval" target="_blank">@the_vijaysingh_deval</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vijay Singh Deval | Grey Fox Holdings. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
-
